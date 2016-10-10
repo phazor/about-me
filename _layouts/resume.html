@@ -1,6 +1,10 @@
 <!DOCTYPE html>
 <html>
 
+  {% if jekyll.environment == 'production' %}
+  {% include analytics.html %}
+  {% endif %}
+
   {% include head.html %}
 
   <body class="theme-{% if site.resume_theme %}{{ site.resume_theme }}{% endif %}">
@@ -27,7 +31,7 @@
         </div>
 
         <div class="executive-summary" itemprop="description">
-   		<p>I am a full stack developer who has worked on a range of projects, from academic research to enterprise software. 
+   		<p>I am a full stack developer who has worked on a range of projects, from academic research to enterprise software.
 				Besides development, I am passionate about inspiring the next generation in science and tech.</p>
         </div>
 
@@ -61,7 +65,7 @@
           <h3 class="resume-item-title" itemprop="name"><a href="https://orionhealth.com/">Orion Health</a></h3>
           <h4 class="resume-item-details" itemprop="description">Junior to Senior Software Engineer &bull; Feb, 2012 &mdash; Mar, 2016</h4>
           <p class="resume-item-copy">Four years working in the health domain, primarily as a Software Engineer. Skills included:</p>
-          <ul class="resume-item-list"> 
+          <ul class="resume-item-list">
             <li>Product Development</li>
             <li>Technical Leadership</li>
             <li>Agile Methodologies</li>
@@ -119,7 +123,7 @@
           <h4 class="resume-item-details">Developer, Team Lead &bull; 2012 &mdash; 2016</h4>
           <p class="resume-item-copy">Patient Portal is a web application that allows patients to view and manage their own medical record from home, with data collated from a variety of sources. The team was cross-functional, so I touched many areas of the application. I focused on the front-end; CSS, white-labelling, accessibility.</p>
         </div>
-        
+
         <div class="resume-item">
             <h3 class="resume-item-title">Orion Health Web Development Tooling</h3>
             <h4 class="resume-item-details">Senior Developer &bull; Oct, 2015 &mdash; Mar, 2016</h4>
@@ -142,7 +146,7 @@
           <h4 class="resume-item-details">Front-End Development</h4>
           <p class="resume-item-copy">Single Page Apps, SMACSS / SASS, ES6, React, Browserify, Webkit, YUI3</p>
         </div>
-        
+
         <div class="resume-item">
           <h4 class="resume-item-details">Javascript</h4>
           <p class="resume-item-copy">NodeJS, Express, Grunt, Karma, Yeoman, Handlebars</p>
@@ -161,7 +165,7 @@
       </section>
       <!-- end Skills -->
       {% endif %}
-      
+
       {% if site.resume_section_associations %}
       <!-- begin Associations -->
       <section class="content-section">
@@ -187,7 +191,7 @@
           <h4 class="resume-item-details">Conferences</h4>
           <p class="resume-item-copy">Chch One-Shot Nodeconf attendee 205. Kiwicon attendee 2013, 2014, 2015.</p>
         </div>
-        
+
         <div class="resume-item">
             <h4 class="resume-item-details">Interests</h4>
             <p class="resume-item-copy">Electronics and RPi/Arduino tinkering, Game modding, Education</p>
@@ -230,7 +234,7 @@
 
       </section>
       <!-- end Publications -->
-          
+
       {% if site.resume_section_recognition %}
       <!-- begin Recognition -->
       <section class="content-section">

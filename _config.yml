@@ -45,6 +45,9 @@ resume_social_links:
 # Design settings
 resume_theme:                   default
 
+# Google Analytics Tracking ID
+google_analytics: UA-78083783-2
+
 # Note: when editing locally, remember to restart
 # your Jekyll server when you edit this file. Changes
 # to _config.yml are only recognized when the server starts

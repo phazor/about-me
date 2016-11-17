@@ -130,12 +130,23 @@
     font-size: 1.5rem;
     letter-spacing: -.05rem;
     line-height: 1;
+    width: auto;
   }
 
   .resume-item-details {
     font-size: 1.125rem;
     margin: 0 0 .75rem;
     line-height: 1;
+    display: inline;
+  }
+
+  .resume-item-link {
+    font-size: 1rem;
+    margin: 0rem 0.75rem 0;
+    display: inline;
+    color: grey;
+    font-style: italic;
+    text-decoration: none;
   }
 
   .resume-item-title,

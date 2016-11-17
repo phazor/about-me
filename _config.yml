@@ -40,7 +40,7 @@ resume_social_links:
   # resume_facebook_url:          "insert Facebook URL here"
   resume_linkedin_url:          "https://www.linkedin.com/in/tristan-read-4b697859/"
   # resume_instagram_url:         "insert your Instagram URL here"
-  resume_website_url:           "http://phazor.github.com/about-me"
+  resume_website_url:           "http://phazor.github.com/about"
 
 # Design settings
 resume_theme:                   default

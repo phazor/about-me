@@ -27,6 +27,32 @@
     @include border-radius(100px);
     margin: 0 auto;
     display: block;
+
+    @media print {
+      float: left;
+    }
+  }
+
+  // Clear-fixes to add address in print-mode
+  .clear-left {
+    @media print {
+      clear: left;
+    }
+  }
+  .clear-both {
+    @media print {
+      clear: both;
+    }
+  }
+
+  .contact-info {
+    display: none;
+    @media print {
+      display: inline;
+      float: right;
+      width: 213px;
+      max-width: 100%;
+    }
   }
 
   .header-name {
@@ -37,6 +63,10 @@
     letter-spacing: -.15rem;
     line-height: 1;
     margin: 1rem 0 2rem;
+
+    @media print {
+      float: left;
+    }
   }
 
   .title-bar {

@@ -8,13 +8,20 @@
 
 html {
   background: $white;
+  font-size: 16px;
 }
 
-body{
+body {
   @include serif;
   color: $text_color;
-  font-size: 16px;
+  // font-size: 5px;
   line-height: 1.5;
+}
+
+@media print {
+  html {
+    font-size: 12px;
+  }
 }
 
 .wrapper:before,

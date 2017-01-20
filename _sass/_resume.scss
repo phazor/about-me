@@ -115,6 +115,10 @@
   }
 
   &.not-looking { width: 400px; }
+
+  @media print {
+    display: none;
+  }
 }
 
 // resume content styles

@@ -31,7 +31,7 @@
         </div>
 
         <div class="executive-summary" itemprop="description">
-   		<p>I am a full stack developer who has worked on a range of projects, from academic research to enterprise software.
+   		<p>I am a full stack developer who has worked on a range of projects and domains, from academic research to enterprise software.
 				Besides development, I am passionate about inspiring the next generation in science and tech.</p>
         </div>
 
@@ -70,7 +70,7 @@
             <li>Technical Leadership</li>
             <li>Agile Methodologies</li>
           </ul>
-          <p class="resume-item-copy">Concepts included routing, module loading, white-labelling, responsive design, accessibility, unit and acceptance tests.</p>
+          <p class="resume-item-copy">Technical concepts included routing, module loading, white-labelling, responsive design, accessibility, unit and acceptance tests.</p>
 
         </div><!-- end of resume-item -->
 
@@ -78,7 +78,7 @@
         <div class="resume-item" itemscope itemprop="worksFor" itemtype="http://schema.org/Organization">
           <h3 class="resume-item-title" itemprop="name">Orion Health</h3>
           <h4 class="resume-item-details" itemprop="description">Team Lead &bull; Jan 2014 &mdash; Jan, 2015</h4>
-          <p class="resume-item-copy">During my time at Orion Health I had a one year stint as a Team Lead. I was tasked with hiring / transitioning a brand new team onto a relatively new product. I introduced Scrum methodologies, co-developed functionality with CDHB, worked as stand-in Product Owner and oversaw deployment of production instances</p>
+          <p class="resume-item-copy">During my time at Orion Health I took a one year stint as a Team Lead. I was tasked with hiring and transitioning a brand new team onto a relatively new product. I introduced Scrum methodologies, co-developed functionality with the region's Health Board, worked as stand-in Product Owner and oversaw deployment of production instances.</p>
 
         </div><!-- end of resume-item -->
 
@@ -98,6 +98,11 @@
           <h3 class="resume-item-title" itemprop="name">University of Canterbury, New Zealand</h3>
           <h4 class="resume-item-details" itemprop="description">Bachelor of Electrical and Electronic Engineering, Hons. &bull; 2008 &mdash; 2011</h4>
           <p class="resume-item-copy">Produced, published and presented two conference papers and a journal article (see Publications).</p>
+        </div>
+
+        <div class="resume-item" itemscope itemprop="alumniOf" itemtype="http://schema.org/CollegeOrUniversity">
+          <h3 class="resume-item-title" itemprop="name">Volkshochschule</h3>
+          <p class="resume-item-copy">Deutsch A1.1 (2017). Volkshochschule Pankow, Berlin.</p>
         </div>
 
       </section>
@@ -187,19 +192,32 @@
 
         <div class="resume-item">
           <h3 class="resume-item-title"></h3>
-          <h4 class="resume-item-details">Tech Events</h4>
-          <p class="resume-item-copy">Organiser for Code Club Aotearoa 'Mashups' in 2014 and 2015. Speaker at Chch .Net User Group 2014. Participant in Airways 'Flight Control' Hackathon, 2013.</p>
+          <h4 class="resume-item-details">Tech Events - presenting and organising</h4>
+          <p class="resume-item-copy">
+            <ul>
+              <li>Organiser for Code Club Aotearoa 'Mashups'. <span class="resume-item-date">New Zealand, 2014 and 2015</span></li>
+              <li>Speaker at Chch .Net User Group. <span class="resume-item-date">New Zealand, 2014</span></li>
+              <li>Participant in Airways 'Flight Control' Hackathon. <span class="resume-item-date">New Zealand, 2013</li>
+              <li>Speaker at Journal of Electronic Imaging conference. <span class="resume-item-date">San Diego USA, 2012</span></li>
+            </ul>
+          </p>
         </div>
 
         <div class="resume-item">
           <h3 class="resume-item-title"></h3>
-          <h4 class="resume-item-details">Conferences</h4>
-          <p class="resume-item-copy">Chch One-Shot Nodeconf attendee 205. Kiwicon attendee 2013, 2014, 2015.</p>
+          <h4 class="resume-item-details">Tech events - attendance only</h4>
+          <p class="resume-item-copy">
+            <ul>
+              <li>JS Code Camp. <span class="resume-item-date">Munich, 2016</span></li>
+              <li>One-Shot Nodeconf. <span class="resume-item-date">Christchurch, 2015</span></li>
+              <li>Kiwicon Security Conference. <span class="resume-item-date">Wellington 2013, 2014, 2015</span></li>
+            </ul>
+          </p>
         </div>
 
         <div class="resume-item">
             <h4 class="resume-item-details">Interests</h4>
-            <p class="resume-item-copy">Electronics and RPi/Arduino tinkering, Game modding, Education</p>
+            <p class="resume-item-copy">Electronics and Raspberry Pi / Arduino tinkering, Game modding, Education, Hiking, Rock Climbing</p>
         </div>
 
       </section>
@@ -281,6 +299,13 @@
 
   <script type="text/javascript">
     {% include iframeResizer.contentWindow.min.js %}
+  </script>
+
+  <script type="text/javsacript">
+    if ('parentIFrame' in window) {
+      var elements = document.getElementsByClassName('new-window');
+      elements.item(0).setAttribute(target, "_blank");
+    }
   </script>
 
   </body>

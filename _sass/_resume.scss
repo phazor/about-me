@@ -1,4 +1,4 @@
-// Resme styles
+// Resume styles
 // ---------------------------------------/
 
 // util
@@ -185,6 +185,12 @@
   }
 
   .resume-item-copy { margin: .75rem 0 0; }
+}
+
+.additional-links {
+  @media print {
+    display: none;
+  }
 }
 
 // footer styles

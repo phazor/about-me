@@ -50,7 +50,7 @@
     @media print {
       display: inline;
       float: right;
-      width: 213px;
+      width: 173px;
       max-width: 100%;
     }
   }
@@ -82,6 +82,7 @@
       letter-spacing: -.05rem;
       text-align: center;
       margin: 0 0 .5rem;
+      @media print { float: left; }
 
       @include media_larger_than_mobile {
         float: left;
@@ -104,6 +105,7 @@
   text-align: center;
   border-top: 2px solid #c7c7c7;
   padding-top: .4rem;
+  @media print { display: none; }
 
   @include media_larger_than_mobile {
     float: right;
@@ -155,8 +157,12 @@
 
 .content-section {
   margin: 0 0 3rem;
+  @media print { page-break-inside: avoid; }
 
-  .resume-item { margin-bottom: 2rem; }
+  .resume-item {
+    margin-bottom: 2rem;
+    @media print { page-break-inside: avoid; }
+  }
 
   .resume-item-title {
     @include sans_bold;
@@ -165,6 +171,11 @@
     letter-spacing: -.05rem;
     line-height: 1;
     width: auto;
+
+    @media print {
+      page-break-inside: avoid;
+      page-break-after: avoid;
+    }
   }
 
   .resume-item-details {

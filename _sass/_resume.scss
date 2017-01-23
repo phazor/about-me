@@ -157,7 +157,7 @@
 
 .content-section {
   margin: 0 0 3rem;
-  @media print { page-break-inside: avoid; }
+  //@media print { page-break-inside: avoid; }
 
   .resume-item {
     margin-bottom: 2rem;
@@ -171,6 +171,7 @@
     letter-spacing: -.05rem;
     line-height: 1;
     width: auto;
+    display: inline;
 
     @media print {
       page-break-inside: avoid;
@@ -179,9 +180,9 @@
   }
 
   .resume-item-details {
-    display: inline;
+    display: block;
     font-size: 1.125rem;
-    margin: 0 0 .75rem;
+    margin: .75rem 0 .75rem;
     line-height: 1;
   }
 
@@ -189,6 +190,7 @@
     display: inline;
     font-style: italic;
     text-decoration: none;
+    vertical-align: text-bottom;
     color: grey;
     font-size: 1rem;
     margin: 0rem 0.6rem 0;
@@ -211,21 +213,27 @@
 
   .resume-item-title,
   .resume-item-details,
-  .resume-item-copy,
+  // .resume-item-copy,
   .resume-item-list {
     a {
       color: #333;
       text-decoration: none;
-      // border-bottom: 1px solid;
 
       &:hover {
-        border-bottom: none;
+        border-bottom: 1px solid;
         color: #9c9c9c;
       }
     }
   }
 
-  .resume-item-copy { margin: .75rem 0 0; }
+  .resume-item-copy {
+    margin: .75rem 0 0;
+
+    a {
+      color: grey;
+      text-decoration: none;
+    }
+  }
 }
 
 .additional-links {

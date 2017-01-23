@@ -38,7 +38,7 @@
 
         <div class="executive-summary" itemprop="description">
           <p>I am a full stack developer who has worked on a range of projects and domains, from academic research and enterprise software to my own non-profit company.
-            Besides development, I am passionate about inspiring the next generation in science and tech.</p>
+            Besides software development, I am passionate about inspiring the next generation in science and tech.</p>
         </div>
 
         {% if site.resume_looking_for_work == 'yes' %}
@@ -62,7 +62,12 @@
         <div class="resume-item" itemscope itemprop="worksFor" itemtype="http://schema.org/Organization">
           <h3 class="resume-item-title" itemprop="name">Code Club Aotearoa</h3>
           <h4 class="resume-item-details" itemprop="description">Co-Founder &amp; Primary Developer &bull; 2012 &mdash; Present</h4>
-          <p class="resume-item-copy">Code Club Aotearoa is a non-profit, New Zealand-wide network of volunteer-run coding clubs. After co-founding the company I developed the website and added dynamic functionality to facilitate networking of volunteers, teachers and venues, which was shared internationally. Myself and the other founding member helped the organisation grow to 250 clubs nationwide and secure $150k in funding grants. I remain a technical advisor to the company in my spare time.</p>
+          <p><b>Skills learned:</b> <i>HTML, CSS, OAuth2, NodeJS, Google Script, Apache, Let's Encrypt SSL, HA Failover</i>.
+          <p class="resume-item-copy">Code Club Aotearoa was founded by myself and a co-worker in our company's "20% Time". We built a non-profit, New Zealand-wide network of volunteer-run coding clubs, which we grew to around 500 volunteers and 3000 students engaging weekly.
+
+          <p class="resume-item-copy">As the tech-focused co-founder, it was important for me to create a robust, appealing, secure website that allowed clubs to self-start and provided us with metrics. Since we put most of our funding back into curriculum development, I also had to ensure that the services run with minimal cost and interruption.</p>
+
+          <p class="resume-item-copy">It remains a passion project of mine in my spare time.</p>
 
         </div><!-- end of resume-item -->
 
@@ -70,20 +75,69 @@
         <div class="resume-item" itemscope itemprop="worksFor" itemtype="http://schema.org/Organization">
           <h3 class="resume-item-title" itemprop="name">Orion Health</h3>
           <h4 class="resume-item-details" itemprop="description">Junior to Senior Software Engineer &bull; Feb, 2012 &mdash; Mar, 2016</h4>
-          <p class="resume-item-copy">I enjoyed four years working in the health domain, three of which were as a Software Engineer. My core responsibilities were Product Development, Technical Leadership and Promoting Agile Methodologies.
-          <p class="resume-item-copy">I worked on several products, both front-end and back-end. I took ownership over the architecture of several modules and learned to think about performance, security and usability. Daily concerns were: requirements gathering, architecture discussions, training team-members, continuous improvement, writing product and tests.</p>
+          <p><b>Skills learned:</b> <i>Javascript, HTML, CSS, Java, Routing, White-Labelling, Accessibility, Performance, Caching, Authentication, Dependency Injection.</i></p>
+          <p class="resume-item-copy">My first professional job was at Orion Health, New Zealand's largest software exporter, creating healthcare software which serves hundreds of millions of patients worldwide.</p>
+
+          <p class="resume-item-copy">I was an active member of several engineering 'guilds'; pushing for continuous delivery, raising security awareness and advocating for modern web development. My contributions helped introduce Browserify and React into the company.</p>
+
+          <p class="resume-item-copy">I worked mostly as a front-end engineer on the Patient Portal product, a patient-facing Single Page App which allows patients to engage with their records online. I took ownership over the architecture of several modules and learned to think about usability, security and performance.</p>
 
         </div><!-- end of resume-item -->
 
         <!-- another resume item -->
         <div class="resume-item" itemscope itemprop="worksFor" itemtype="http://schema.org/Organization">
           <h4 class="resume-item-details" itemprop="description">Team Lead &bull; Jan 2014 &mdash; Jan, 2015</h4>
-          <p class="resume-item-copy">During my time at Orion Health I took a one year stint as a Team Lead. I was tasked with hiring and transitioning a brand new team onto a relatively new product. I introduced Scrum methodologies, co-developed functionality with the region's Health Board, worked as stand-in Product Owner and oversaw deployment of production instances.</p>
+          <p><b>Skills learned:</b> <i>Leadership, Scrum, BDD, Continuous Delivery, Coaching.</i></p>
+          <p class="resume-item-copy">During my time at Orion Health I took a one year stint as a Team Lead. In order to create the most modern product in its domain, our brand new team took ownership of pushing forward web development within the company.</p>
+
+          <p>In addition to leading the development team, I oversaw feature workshops with regional Health Board representatives, worked as stand-in Product Owner and established continuous delivery to production instances.</p>
+
+          <p>It was a great learning experience for me, one which certainly gives me greater perspective in my role as a Software Engineer.</p>
 
         </div><!-- end of resume-item -->
 
       </section>
       <!-- end Experience -->
+      {% endif %}
+
+      {% if site.resume_section_projects %}
+      <!-- begin Projects -->
+      <section class="content-section">
+
+        <header class="section-header">
+          <h2>Projects</h2>
+        </header>
+
+        <div class="resume-item">
+          <h4 class="resume-item-details">Virtual Cloud Chamber &bull; Oct 2016</h4>
+          <p><b>Skills learned:</b> <i>HTML, Javascript, Canvas</i></p>
+          <p class="resume-item-copy">I was inspired after seeing a live Cloud Chamber (a device which creates vapor trails when particles pass through) at CERN. I decided to create a true-to-physics virtual representation of this cloud chamber to show how weird reality can be. It's available at <i><a class="new-window" href="https://phazor.github.io/cloud-chamber">phazor.github.io/cloud-chamber</a></i>.</p>
+        </div>
+
+        <!-- another resume-item -->
+        <div class="resume-item">
+          <!-- <h3 class="resume-item-title" itemprop="name">University of Canterbury </h3> -->
+          <h4 class="resume-item-details">Maximum Subarray Problem &bull; Nov 2011 &mdash; Feb, 2012</h4>
+          <p><b>Skills learned:</b> <i>CUDA, C++, Parallel Programming, Algorithms, Image Processing</i>.
+          <p class="resume-item-copy">My goal for this 3 month contract was to implement various improvements on an image processing algorithm being developed at UC by a theoretician, and measure the efficiency. These algorithms are designed for use on parallel processors so I wrote code for IBM Blue Gene as well as for nVidia cards using CUDA.</p>
+
+          <p>Striking a balance between theory and implementation was a nice challenge and appealed to my inner engineer.</p>
+
+        </div><!-- end of resume-item -->
+
+        <div class="resume-item">
+          <h4 class="resume-item-details">Visual Processing for the Bionic Eye &bull; Nov 2009 &mdash; Feb, 2010</h4>
+          <p><b>Skills learned:</b> <i>Python, Population Modelling, Visual Processing.</i></p>
+          <p class="resume-item-copy">Spent 3 months working for National ICT Australia writing a simulation of the retina and visual cortex's electrical properties, to help researchers design better bionic eyes. I enjoyed combining my physics and programming skills for something that could benefit society.
+        </div>
+
+        <div class="resume-item">
+          <h4 class="resume-item-details">Various other projects</h4>
+          <p class="resume-item-copy">A collection of small personal projects. Tools used: React, React-Router, Canvas, CSS, Webkit, Jekyll, available at <i><a class="new-window" href="https://phazor.github.io/">phazor.github.io</a></i>.
+        </div>
+
+      </section>
+      <!-- end Projects -->
       {% endif %}
 
       {% if site.resume_section_education %}
@@ -107,45 +161,6 @@
 
       </section>
       <!-- end Education -->
-      {% endif %}
-
-      {% if site.resume_section_projects %}
-      <!-- begin Projects -->
-      <section class="content-section">
-
-        <header class="section-header">
-          <h2>Projects</h2>
-        </header>
-
-        <div class="resume-item">
-          <h3 class="resume-item-title">Code Club - Website and Club Tools</h3>
-          <h4 class="resume-item-details">Co-Founder &amp; Primary Developer &bull; 2012 &mdash; Present</h4><a class="resume-item-link new-window" href="https://codeclub.nz">codeclub.nz</a>
-          <p class="resume-item-copy">The Code Club Aotearoa website is a standard Jekyll static web page and talks to backend infrastructure that connects volunteers, students and venues together.
-
-          <p class="resume-item-copy">The backend service consists of NodeJS middleware which recieves requests and serves data to and from the website, backed by Google Sheets API using OAuth2 authentication. This allows students, volunteers and clubs to register their interest and contact each other, and thus bring all the ingredients for a successful club together. It is designed also to allow the organisation to track active clubs and generate metrics which are used for reporting to current and potential funders of the project.</p>
-          <p><b>Core Tools:</b> <i>NodeJS, HTML, CSS, OAuth2, Dev Ops, Digital Ocean, CloudFlare.</i>
-        </div>
-
-        <div class="resume-item">
-          <h3 class="resume-item-title">'Engage' - Patient Portal</h3>
-          <h4 class="resume-item-details">Developer, Team Lead &bull; 2012 &mdash; 2016</h4><a class="resume-item-link new-window" href="https://orionhealth.com/us/products/engage/">orionhealth.com/us/products/engage</a>
-          <p class="resume-item-copy">Patient Portal is a web application that allows patients to view and manage their own medical record from home, with data collated from a variety of sources. I worked in this team as a cross-functional member with a focus on front-end. Over my time in the team I touched most, if not all, areas of the product.</p>
-          <p><b>Core Tools:</b> <i>Javascript, Routing, CSS, White-Labelling, Accessibility, Performance, Caching, Authentication, Dependency Injection.</i></p>
-        </div>
-
-        <div class="resume-item">
-          <h3 class="resume-item-title">Web Dev Tooling</h3>
-          <h4 class="resume-item-details">Senior Developer &bull; Oct, 2015 &mdash; Mar, 2016</h4>
-          <p class="resume-item-copy">Part of a team who developed the next generation of web-dev tooling to move the company away from YUI. The core functionality is a scaffolder which generates sample applications and provides a set of basic npm workflows. In addition, I contributed to a tool for packaging ES6 modules into a format compatible with existing YUI-based deployments and OSGI dependency injection. This allowed our field staff to add custom screens built in React and if need be, deploy them into live instances of the product.</p>
-        </div>
-
-        <div class="resume-item">
-          <h4 class="resume-item-details">Various other projects</h4><a class="resume-item-link new-window" href="https://phazor.github.io/">phazor.github.io</a>
-          <p class="resume-item-copy">A collection of small personal projects. Tools used: React, React-Router, Canvas, CSS, Webkit, Jekyll.
-        </div>
-
-      </section>
-      <!-- end Projects -->
       {% endif %}
 
       {% if site.resume_section_skills %}
@@ -221,7 +236,7 @@
 
         <div class="resume-item">
             <h4 class="resume-item-details">Interests</h4>
-            <p class="resume-item-copy">Electronics and Raspberry Pi and Arduino tinkering, Game modding, Education, Hiking, Rock Climbing</p>
+            <p class="resume-item-copy">Home Electronics, Game modding, Education, Hiking, Rock Climbing</p>
         </div>
 
       </section>

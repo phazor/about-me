@@ -18,7 +18,8 @@
 
 // page header styles
 
-.page-header { padding: 1.5rem 0;
+.page-header {
+  padding: 1.5rem 0;
 
   .avatar {
     width: 95px;
@@ -127,26 +128,29 @@
   }
 }
 
-.contact-button {
-  @include border-radius(3px);
-  background-color: #efefef;
-  text-decoration: none;
-  text-align: center;
+.contact-section {
   display: block;
-  margin: 1.5rem auto;
-  width: 220px;
-  font-size: 1.375rem;
-  @include sans_light;
-  color: #333;
-  line-height: 55px;
-  @include transition(all .2s ease);
 
-  &:hover {
-    background-color: #333;
-    color: #fff;
+  .contact-button {
+    @include border-radius(3px);
+    background-color: #efefef;
+    text-decoration: none;
+    text-align: center;
+    margin: 1.5rem auto;
+    width: 220px;
+    font-size: 1.375rem;
+    @include sans_light;
+    color: #333;
+    line-height: 55px;
+    @include transition(all .2s ease);
+
+    &.not-looking { width: 400px; }
+
+    &:hover {
+      background-color: #333;
+      color: #fff;
+    }
   }
-
-  &.not-looking { width: 400px; }
 
   @media print {
     display: none;

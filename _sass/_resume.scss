@@ -18,7 +18,8 @@
 
 // page header styles
 
-.page-header { padding: 1.5rem 0;
+.page-header {
+  padding: 1.5rem 0;
 
   .avatar {
     width: 95px;
@@ -162,6 +163,10 @@
   .resume-item {
     margin-bottom: 2rem;
     @media print { page-break-inside: avoid; }
+
+    &.small {
+      margin-bottom: 1rem;
+    }
   }
 
   .resume-item-title {
@@ -233,6 +238,10 @@
       color: grey;
       text-decoration: none;
     }
+  }
+
+  .no-break {
+    display: inline-block;
   }
 }
 

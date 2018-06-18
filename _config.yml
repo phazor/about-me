@@ -11,7 +11,7 @@ sass:
 # Resume settings
 resume_avatar:                  "true"
 resume_name:                    "Tristan Read"
-resume_title:                   "Full Stack Developer"
+resume_title:                   "Frontend Developer"
 resume_contact_email:
   "tristan.r.read@gmail.com"
 
